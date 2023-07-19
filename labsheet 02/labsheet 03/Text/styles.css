@@ -1,0 +1,10 @@
+.btn-alert{
+    width: 100px;
+    height: 30px;
+    background-color: darkred;
+    color: white;
+    border: none;
+}
+.btn-alert:hover{
+    background-color: red;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercise 3.3</title>
+</head>
+<body>
+<script>
+  var array=[
+    [Name = "John"],
+    [Age = 30],
+    [City ="Colombo"]
+  ];
+  var person;
+  function createMap(){
+    person=new Map(array);
+  }
+  function deleteElement(str){
+      person.delete(str);
+  }
+  createMap();
+  deleteElement("Age");
+  document.write(person);
+
+</script>
+</body>
+</html>

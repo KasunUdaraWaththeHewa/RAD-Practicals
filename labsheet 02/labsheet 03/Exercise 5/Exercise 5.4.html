@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 5.4</title>
+</head>
+<body>
+    <script>
+      function isPrime(num) {
+        if (num <= 1) {
+          return false;
+        }
+        for (let i = 2; i <= Math.sqrt(num); i++) {
+          if (num % i === 0) {
+            return false;
+          }
+        }
+        return true;
+      }
+      var num=prompt("Enter number : ");
+      var flag=isPrime(num);
+      if(flag){
+          window.alert("Number is Prime");
+      }else{
+          window.alert("Number is not Prime");
+      }
+    </script>
+</body>
+</html>

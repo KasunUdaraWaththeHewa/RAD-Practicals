@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 5.7</title>
+</head>
+<body>
+    <script>
+      const numbers = [80,30,40,50,23];
+      numbers[2]=78;
+      document.write("Length of the array : "+numbers.length+"<br>");
+      function sort() {
+        const length = numbers.length;
+        for (let i = 1; i < length; i++) {
+          const key = numbers[i];
+          let j = i - 1;
+          while (j >= 0 && numbers[j] > key) {
+            numbers[j + 1] = numbers[j];
+            j--;
+          }
+          numbers[j + 1] = key;
+        }
+        return numbers;
+      }
+      sort();
+      document.write("Sorted array is : "+numbers);
+    </script>
+</body>
+</html>

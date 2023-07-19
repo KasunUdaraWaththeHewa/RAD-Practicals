@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 4.3</title>
+</head>
+<body>
+    <script>
+        triangle={
+          height : 25,
+          base : 24,
+          color : "Red",
+          area:function(){
+              return (1/2)*this.height*this.base;
+          }
+        }
+        document.write("Height : ",triangle.height+"<br>");
+        document.write("Base : ",triangle.base+"<br>" );
+        document.write("Color : "+triangle.color+"<br>");
+        document.write("Area : "+triangle.area()+"<br>")
+    </script>
+</body>
+</html>

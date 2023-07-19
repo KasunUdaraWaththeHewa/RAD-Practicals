@@ -1,0 +1,33 @@
+.div-form{
+    width: 350px;
+    height: 250px;
+    background-color:gainsboro;
+}
+
+.btn-click{
+    background-color: #1D741B;
+    height: 40px;
+    width: 150px;
+    border: none;
+    margin: 10px;
+    color: white;
+    border-radius: 5%;
+}
+.btn-click:hover{
+    background-color:#88CA5E;
+    color: black;
+}
+
+.form{
+    padding: 25px;
+}
+.txt{
+    width: 280px;
+    height: 30px;
+    border: 1px solid grey;
+    border-radius: 5%;
+    margin: 8px;
+}
+.lbl{
+    margin: 5px;
+}
