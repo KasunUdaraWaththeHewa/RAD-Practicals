@@ -5,12 +5,13 @@ import Toggle from './Toggle';
 import Timer from './Timer';
 import TodoList, { todos } from './TodoList'; 
 import CardList from './CardList';
+import Form from './Form';
 
 
 function App() {
   return (
     <div className="App">
-      <CardList />
+      <Form />
     </div>
   );
 }
