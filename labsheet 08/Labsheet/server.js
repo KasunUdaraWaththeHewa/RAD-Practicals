@@ -3,6 +3,7 @@ const bodyParser = require('body-parser');
 const app=express();
 app.use(bodyParser.urlencoded({ extended: true }));
 
+//problem 2
 app.get('/', (req, res) => {
   res.sendFile(__dirname + '/registration.html');
 });
@@ -15,11 +16,14 @@ app.post('/register', (req, res) => {
   res.send(`Name: ${name}<br>Email: ${email}<br>Password: ${password}`);
 });
 
+
+//problem 1
 app.get('/greet/:name', (req, res) => {
   const name = req.params.name;
   res.send(`Hello, ${name}!`);
 });
 
+//problem 3
 const books = [
     { id: 1, title: 'Book 1' },
     { id: 2, title: 'Book 2' },
@@ -29,6 +33,26 @@ const books = [
   app.get('/api/books', (req, res) => {
     res.json(books);
   });
+
+
+//problem 4
+const validUsername = 'user';
+const validPassword = 'password';
+
+app.get('/login', (req, res) => {
+  const { username, password } = req.query;
+
+  if (username === validUsername && password === validPassword) {
+    res.send(`Welcome, ${username}!`);
+  } else {
+    res.status(401).send('Authentication failed');
+  }
+});
+
+
+//problem 5
+
+
 
 const port=3000;
 app.listen(port,()=>{
