@@ -13,6 +13,6 @@ app.post('/registration', (req, res) => {
   res.send(`Name: ${name}, Email: ${email}, Password: ${password}`);
 });
 
-app.listen(3000, () => {
-  console.log('Server is running on port 3000');
+app.listen(3005, () => {
+  console.log('Server is running on port 3005');
 });

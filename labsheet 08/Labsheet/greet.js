@@ -6,6 +6,6 @@ app.get('/greet/:name', (req, res) => {
   res.send(`Hello, ${name}!`);
 });
 
-app.listen(3000, () => {
-  console.log('Server is running on port 3000');
+app.listen(3003, () => {
+  console.log('Server is running on port 3003');
 });
