@@ -1,0 +1,16 @@
+doctype html
+html
+  head
+    title Register
+  body
+    form(action='/register', method='post', enctype='multipart/form-data')
+      label(for='username') Username:
+      input(type='text', name='username')
+      br
+      label(for='password') Password:
+      input(type='password', name='password')
+      br
+      label(for='profilePicture') Profile Picture:
+      input(type='file', name='profilePicture')
+      br
+      button(type='submit') Register

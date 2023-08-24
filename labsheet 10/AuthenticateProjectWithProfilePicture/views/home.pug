@@ -1,0 +1,14 @@
+doctype html
+html
+  head
+    title User Authentication
+  body
+    if user
+      p Welcome, #{user.username}!
+      if user.profilePicturePath
+        img(src=user.profilePicturePath, alt='Profile Picture')
+      a(href='/logout') Logout
+    else
+      a(href='/login') Login
+      br
+      a(href='/register') Register

@@ -1,0 +1,12 @@
+doctype html
+html
+  head
+    title User Authentication
+  body
+    if user
+      p Welcome, #{user.username}!
+      a(href='/logout') Logout
+    else
+      a(href='/login') Login
+      br
+      a(href='/register') Register
